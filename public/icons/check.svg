@@ -1,0 +1,26 @@
+<svg width="10.666656" height="10.666687" viewBox="0 0 10.6667 10.6667" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_60_204_dd" x="-0.000183" y="0.663147" width="10.669769" height="10.513245" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="2"/>
+			<feGaussianBlur stdDeviation="0"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip60_202">
+			<rect id="bi:check-lg" width="10.666666" height="10.666666" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="bi:check-lg" width="10.666666" height="10.666666" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip60_202)">
+		<g filter="url(#filter_60_204_dd)">
+			<path id="Vector" d="M8.98999 0.953979C9.17264 0.769653 9.42084 0.6651 9.68036 0.663147C9.93988 0.661255 10.1896 0.762146 10.3749 0.943787C10.5603 1.12543 10.6662 1.37311 10.6695 1.63257C10.6728 1.89209 10.5733 2.14233 10.3926 2.32867L5.16599 8.86267C5.0762 8.95935 4.96783 9.03693 4.84741 9.09082C4.72696 9.14465 4.59689 9.17371 4.465 9.17621C4.33307 9.17871 4.202 9.1546 4.07962 9.10529C3.95721 9.05603 3.84604 8.98254 3.75266 8.88934L0.287323 5.42535C0.10318 5.24109 -0.000244141 4.99127 -0.000183105 4.73077C-0.00012207 4.47028 0.103424 4.22046 0.287659 4.03632C0.471893 3.85217 0.721741 3.74878 0.982239 3.74884C1.24271 3.7489 1.49249 3.85242 1.67667 4.03668L4.41733 6.77802L8.96399 0.98468C8.97226 0.974121 8.98114 0.964111 8.99066 0.954651L8.98999 0.953979Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
