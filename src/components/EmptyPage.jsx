@@ -8,7 +8,6 @@ const EmptyPage = ({ emptyData }) => {
       <h3>{emptyData.title}</h3>
       <p>{emptyData.text}</p>
       <Link to={"/"}>
-        {" "}
         <img src="/icons/arrow.svg" alt="arrow" /> Вернуться назад
       </Link>
     </EmptyPageStyle>

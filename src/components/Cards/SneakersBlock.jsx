@@ -57,7 +57,7 @@ const SneakersBlockStyle = styled.section`
 
       input {
         color: rgb(196, 196, 196);
-        width: 250px;
+        width: max(25rem, 150px);
         height: 45px;
         padding: 0 20px 0 46px;
         font-size: 14px;

@@ -10,16 +10,9 @@ export const purchasesSlice = createSlice({
       setItems("basket", []);
       setItems("purchases", state);
     },
-    delFromPurchases: (state, action) => {
-      state.splice(
-        state.findIndex((el) => el.id === action.payload),
-        1
-      );
-      setItems("purchases", state);
-    },
   },
 });
 
-export const { addToPurchases, delFromPurchases } = purchasesSlice.actions;
+export const { addToPurchases } = purchasesSlice.actions;
 
 export default purchasesSlice.reducer;

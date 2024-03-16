@@ -42,6 +42,7 @@ const BasketCardStyle = styled.li`
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 8px;
+      min-width: 140px;
     }
 
     p {

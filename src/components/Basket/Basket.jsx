@@ -18,6 +18,7 @@ const Basket = ({ openBasket, isOpen }) => {
   }
 
   function closeBasket() {
+    console.log(1);
     openBasket();
     setIsPurchase(false);
   }
@@ -76,6 +77,16 @@ const BasketStyle = styled.div`
     transform: translateX(100%);
     transition: all 300ms ease-in-out;
     transition-delay: 200ms;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    min-width: max(3.85rem, 330px);
+
+    & > h2 {
+      margin-bottom: 30px;
+    }
   }
 
   .basket-open {
@@ -86,16 +97,9 @@ const BasketStyle = styled.div`
     width: 100%;
   }
 
-  & > div:last-of-type {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-width: 385px;
-    height: 100%;
-    padding: 30px;
-
-    & > h2 {
-      margin-bottom: 30px;
+  @media (max-width: 500px) {
+    .basket {
+      padding: 10px;
     }
   }
 `;

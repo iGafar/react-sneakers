@@ -5,13 +5,15 @@ const MainBlock = () => {
     <MainBlockStyle>
       <div className="container">
         <div>
-          <div>
+          <div className="content">
             <h1>
               <span>Stan Smith,</span> Forever!
             </h1>
             <a href="#">Купить</a>
           </div>
-          <img src="/images/main-back.jpeg" alt="Фон" />
+          <picture>
+            <img src="/images/main-back.jpeg" alt="Фон" />
+          </picture>
         </div>
       </div>
     </MainBlockStyle>
@@ -19,7 +21,7 @@ const MainBlock = () => {
 };
 
 const MainBlockStyle = styled.section`
-  margin-bottom: 39px;
+  margin-bottom: max(3.9rem, 20px);
 
   .container > div {
     border-radius: 20px;
@@ -31,18 +33,23 @@ const MainBlockStyle = styled.section`
     padding-left: 61px;
   }
 
+  .content {
+    padding: 15px 0;
+  }
+
   h1 {
     max-width: 240px;
     margin-bottom: 10px;
 
     span {
       color: rgb(139, 180, 60);
+      white-space: nowrap;
     }
   }
 
   a {
     display: inline-flex;
-    padding: 14px 65px;
+    padding: 1.4rem 6.5rem;
     background-color: rgb(165, 211, 100);
     border-radius: 110px;
     color: rgb(255, 255, 255);
@@ -50,6 +57,16 @@ const MainBlockStyle = styled.section`
     font-weight: 700;
     line-height: 19px;
     text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    .container > div {
+      padding-left: 15px;
+    }
   }
 `;
 

@@ -7,7 +7,9 @@ const Header = ({ openBasket }) => {
       <div className="container">
         <Link to={"/"}>
           <LogoStyle>
-            <img src="/icons/logo.png" alt="Logo" />
+            <picture>
+              <img src="/icons/logo.png" alt="Logo" />
+            </picture>
             <div>
               <p>REACT SNEAKERS</p>
               <p>Магазин лучших кроссовок</p>
@@ -19,7 +21,7 @@ const Header = ({ openBasket }) => {
             <li>
               <button onClick={() => openBasket()}>
                 <img src="/icons/basket.svg" alt="basket" />
-                <p>1200r</p>
+                <p>Корзина</p>
               </button>
             </li>
             <li>
@@ -43,7 +45,7 @@ const Header = ({ openBasket }) => {
 
 const HeaderStyle = styled.header`
   border-bottom: 1px solid rgb(234, 234, 234);
-  margin-bottom: 45.5px;
+  margin-bottom: max(4.5rem, 20px);
 
   .container {
     display: flex;
@@ -68,15 +70,26 @@ const HeaderStyle = styled.header`
     font-weight: 600;
     line-height: 17px;
   }
+
+  @media (max-width: 700px) {
+    li {
+      display: flex;
+
+      p {
+        display: none;
+      }
+    }
+  }
 `;
 
 const LogoStyle = styled.div`
   display: flex;
+  align-items: center;
   gap: 16px;
 
   div {
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: max(2rem, 16px);
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;

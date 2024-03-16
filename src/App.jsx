@@ -61,13 +61,13 @@ const Global = createGlobalStyle`
 	}
 
 	h1 {
-		font-size: 38px;
+		font-size: max(3.8rem, 24px);
 		font-weight: 700;
-		line-height: 46px;
+		line-height: max(4.6rem, 24px);
 	}
 
 	h2 {
-		font-size: 32px;
+		font-size: max(3.2rem, 22px);
 		font-weight: 700;
 		line-height: 39px;
 	}
@@ -82,9 +82,13 @@ const Global = createGlobalStyle`
 		html {
 			font-size: 8px;
 		}
+
+		.container {
+			padding: 0 25px;
+		}
 	}
 
-	@media (max-width: 975px) {
+	@media (max-width: 980px) {
 		html {
 			font-size: 7px;
 		}
@@ -102,6 +106,12 @@ const Global = createGlobalStyle`
 	@media (max-width: 550px) {
 		html {
 			font-size: 5px;
+		}
+		body {
+			padding: 0;
+		}
+		#root {
+			margin-top: 0;
 		}
 	}
 `;
